@@ -13,8 +13,15 @@ pip install parsecfi
 ```
 
 ```
+from parsecfi import Parsec
+from datetime import datetime, timedelta
+import pandas as pd
+
 API_KEY = "<YOUR API KEY>"
 parsec = Parsec(API_KEY)
+
+week_ago = datetime.now() - timedelta(days=7)
+since = int(week_ago.timestamp())
 
 CHAIN = "base"
 FRIEND_TECH = "0xcf205808ed36593aa40a44f10c7f7c2f67d4a4d4"
