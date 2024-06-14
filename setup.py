@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='parsecfi',
-    version='0.1.5',
+    version='0.1.6',
     description='Python SDK for the Parsec API',
     author='PARSEC FINANCE INC.',
     packages=[
