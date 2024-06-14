@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='parsecfi',
-    version='0.1.0',
+    version='0.1.5',
     description='Python SDK for the Parsec API',
     author='PARSEC FINANCE INC.',
     packages=[
@@ -16,3 +16,10 @@ setup(
         'pandas'
     ]
 )
+
+# to release increment version and run
+#
+# python setup.py sdist bdist_wheel
+# twine upload dist/*
+#
+# python setup.py sdist bdist_wheel && twine upload dist/*
